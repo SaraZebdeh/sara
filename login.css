@@ -1,0 +1,75 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.The-Full-Page
+{
+    height: 100%;
+	width: 100%;
+	background-image: url(background-of-page.jpg);
+	background-position: center;
+	background-size: cover;
+	position: fixed;
+	
+}
+
+.form-box
+{
+    width:25%;
+	height:520px;
+	position:relative;
+	margin:2% auto;
+	background:rgb(0,128,0,0.3);
+	padding:1%;
+    overflow: hidden;
+}
+
+
+.input-group-login
+{
+	top:25%;
+	position:absolute;
+	width:60%;
+	transition:.5s;
+}
+
+.input-field
+{
+	width: 100%;
+	padding:5% 0;
+	margin:2% 0;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom: 1% solid black;
+	outline:none;
+	background: transparent;
+}
+.submit-btn
+{
+	width: 85%;
+	padding: 5% 11%;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: #F3C693;
+	border: 0;
+	outline: none;}
+
+#login
+{
+	left: 15%;;
+}
+#login input
+{
+	color:black;
+	font-size:15;
+}
+#lgn{
+	position: relative;
+	left:40%;
+}

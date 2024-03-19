@@ -1,0 +1,88 @@
+body{
+    margin:0;
+    border:0;
+    width: 100%;
+}
+#header{
+    width:100%;
+    height:70px;
+    background-color:black;
+    color:white;
+}
+#side_bar,#side_bar_item{
+    width:200px;
+    height:500px;
+    background: #F3C693;
+    float:left;
+
+}
+#data{
+    height: 500px;
+    background-color: rgba(0,128,0,0.3);
+}
+#adminlogo{
+position: relative;
+left:45%;
+top:2%;
+}
+h3{
+    position: relative;
+    left:54%;
+    top:10%;
+    color: black;
+}
+h2{
+    position: relative;
+    left:25%;
+    top:30%;
+}
+ul li{
+    padding: 20px;
+    border-bottom: 2px solid grey;
+}
+ul li:hover{
+    background-color: darkgray;
+}
+h1{
+    position: relative;
+    left:35%;
+    top:30%;
+}
+#add
+{
+   color:black ;
+   height: 100%;
+	width: 100%;
+    background-color: darkgray;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+#btn{
+    position: relative;
+    left:40%;
+}
+.input-field{
+    position: relative;
+    left:25%;
+}
+#Dbtn{
+    position: relative;
+    left:30%;
+}
+#delete,#view,#set{
+    background-color: darkgrey;
+}
+#Vbtn{
+    position: relative;
+    left:40%;
+    top:20%;
+}
+h5{
+    position: relative;
+    left: 35%;
+}
+#log{
+    position: relative;
+    left:90%;
+}

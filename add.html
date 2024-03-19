@@ -1,0 +1,63 @@
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>Add User</title>
+        <link rel="stylesheet" href="Admin.css">
+        <?php
+        include 'connection.php';
+        $fname = $_POST['fname'];
+        $lname = $_POST['lname'];
+        $email = $_POST['email'];
+        $pass = $_POST['password'];
+        $phone = $_POST['phone'];
+        $photo = $_POST['photo'];
+        $sql = "INSERT into user (First_Name,Last_Name,Email,Mobile_Number,Personal_Picture,Password) vlaues ('$fname' , '$lname' , 'email' , 'phone' , 'photo' , 'password')";
+        if(_$POST['submit']){
+            if(mysqli_query($conn, $sql)){
+                echo "user is added successfully";
+            }
+            else{
+                echo "something went wrong";
+            }
+        }
+        ?> 
+
+
+</head>
+<body>
+    <div id="add">
+<form action="add.html" method="post">
+    <div class="input-field">
+        <label for="Ufname">First Name:</label>
+        <input type="text" id="Ufname" name ="fname" placeholder="first name" required>
+      </div>
+    </br>
+    <div class="input-field">
+      <label for="Ulname">Last Name:</label>
+      <input type="text" id="Ulname"  name ="lname" placeholder="last name" required>
+    </div>
+  </br>
+      <div class="input-field">
+        <label for="email">Email:</label>
+         <input type="email" id="email"  name="email" placeholder="email" required>
+      </div>
+    </br>
+    <div class="input-field">
+        <label for="Unumber">Mobile Number:</label>
+        <input type="text"  id= "Unumber" name ="phone" placeholder="number" required>
+      </div>
+    </br>
+    <div class="input-field">
+    <label for="photo">Personal Picture:</label>
+    <input type="file" id="photo" name ="photo" placeholder="photo" required>
+    </div>
+    </br>
+    <div class="input-field">
+        <label for="password">Password:</label>
+         <input type="password" id="password"  name="password" placeholder="Your Password" required>
+      </div>
+    </br>
+    <input type="submit" value="Add the user" name="submit" id="btn">
+    </div>
+</body>
+</html>
